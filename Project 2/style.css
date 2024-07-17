@@ -10,28 +10,36 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+   background-color: #2d3436;
 }
+
 
 .container{
     width: 330px;
-    border: 2px solid black;
-    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(61, 60, 60, 0.24) 0px 3px 8px;
+    border-radius: 10px;
     height: 450px;
     position: relative;
+    border: 1px solid #dadada;
+   
 }
 .stories{
+    
+    z-index: 10;
     height: 15%;
     display: flex;
-    background-color: white;
+    background-color: #dadada;
     align-items: center;
     overflow:auto;
-    border-bottom: 1px solid gray;
+    
     padding: 0px 5px;
     gap: 10px;
 }
 .stories::-webkit-scrollbar{
     display: none;
 }
+
 .story{
     min-width: 60px;
     width: 60px;
@@ -51,6 +59,8 @@ body{
 
 }
 #currStory{
+   
+   
     position: absolute;
     top: 0px;
     left: 0px;
@@ -60,7 +70,10 @@ body{
     object-position: center;
     opacity: 0;
     z-index: -1;
+
+
 }
+
 
 
 

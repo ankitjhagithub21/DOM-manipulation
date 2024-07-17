@@ -7,6 +7,7 @@ const stories = [
 
 const currStory = document.getElementById('currStory')
 const storyContainer = document.getElementById('stories')
+const loader = document.getElementById('loader')
 
 const displayStories = () => {
 
@@ -20,9 +21,11 @@ const displayStories = () => {
         storyContainer.appendChild(div)
 
         div.addEventListener('click',()=>{
+          
             currStory.src = story
+            
             currStory.style.opacity = 1
-           
+          
         })
     })
 }
