@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./cloud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+   height: 100px;
+   
+    display: flex;
+    padding: 0 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2{
+    font-size: 25px;
+    background-color: rgba(196, 187, 187, 0.562);
+    color: white;
+    padding: 5px 20px;
+
+    border-radius: 5px;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -100%;
+   background-color: #537cc762;
+    width: 30%;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    
+}
+.sidebar h1{
+    cursor: pointer;
+   font-size: 40px;
+}
+
+.sidebar button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
