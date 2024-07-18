@@ -27,11 +27,10 @@ nav{
 
 nav h2{
     font-size: 25px;
-    background-color: rgba(196, 187, 187, 0.562);
     color: white;
     padding: 5px 20px;
-
     border-radius: 5px;
+    background-color: rgba(196, 187, 187, 0.788);
 }
 
 button{
@@ -41,7 +40,7 @@ button{
     font-size: 20px;
     padding: 5px 8px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: rgba(196, 187, 187, 0.788);
     color: white;
     cursor: pointer;
     
@@ -76,4 +75,10 @@ button{
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+@media (max-width:768px) {
+    .sidebar{
+        width: 100%;
+    }
 }
