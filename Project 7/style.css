@@ -1,0 +1,16 @@
+#audio{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: purple;
+    background: transparent;
+}
+
+.col-6{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.col-6:hover{
+    transform: scale(1.02);
+}

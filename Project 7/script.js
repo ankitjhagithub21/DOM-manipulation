@@ -16,19 +16,19 @@ const fetchData = async (query) => {
 };
 
 const displaySongs = (songs) => {
-    console.log(songs[0])
+  
     list.innerHTML = ''; // Clear previous results
     songs.forEach((song) => {
         const div = document.createElement('div');
-        div.classList = "col-lg-4 col-6 my-2";
+        div.classList = "col-lg-2 col-6 my-2";
         div.innerHTML = `
             <img src="${song.image[2].url}" class="img-fluid rounded-3" alt="${song.title}"/>
-            <p>${song.name}</p>
+            
         `;
         list.appendChild(div);
         div.addEventListener('click', () => {
-               audio.src = song.url;
-             playAudio()
+               audio.src = song.downloadUrl[2].url;
+               audio.play()
 
         });
     });
@@ -40,6 +40,4 @@ searchBtn.addEventListener('click', () => {
     }
 });
 
-function playAudio(){
-    audio.play()
-}
+fetchData("latest")
